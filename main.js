@@ -35,9 +35,15 @@ memberElement.append (member)
 container.appendChild(memberElement)
 
 memberElement.addEventListener('click' , function(){
-    memberElement.classList.add('bg-primary')
+    memberElement.classList.toggle('bg-primary')
 })
 
 }
+document.getElementById('addMember').addEventListener('click' , function(){
+    const newMember = document.getElementById('newMember').value;
+    console.log(newMember);
+})
+
+
 
 
